@@ -55,12 +55,12 @@ int main()
     printf("Enter a string: ");
     char *userInput = readDynamicString();
 
-    //Uncomment if you want to desallocate memory
-    // if (userInput != NULL)
-    // {
-    //     printf("You entered: %s\n", userInput);
-    //     free(userInput); 
-    // }
+    // Desallocate the memory
+    if (userInput != NULL)
+    {
+        printf("You entered: %s\n", userInput);
+        free(userInput); 
+    }
 
     return 0;
 }
